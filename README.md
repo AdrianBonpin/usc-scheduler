@@ -15,4 +15,5 @@ Usc scheduler is a scheduler that aims to make creating semestral scheduling eas
 - Website
 
 ## Commands (for dev)
-`docker run --name postgres-serialkitten -p 5432:5432 -e POSTGRES_PASSWORD=pass -d postgres`
+Docker
+`docker run --name usc-scheduler -p 5432:5432 -e POSTGRES_PASSWORD=1234 -d postgres`
