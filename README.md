@@ -5,7 +5,7 @@ Usc scheduler is a scheduler that aims to make creating semestral scheduling eas
 - NextJS (Framework)
 - NodeJS (Server)
 - Supabase & Local Postgres DB
-- Drizzle ORM (?? Not sure might go prisma)
+- Prisma ORM
 - NextAuth (Route Auth)
 - NextThemes (I dont want to go crazy)
 - more to add (as time passes)
@@ -17,3 +17,6 @@ Usc scheduler is a scheduler that aims to make creating semestral scheduling eas
 ## Commands (for dev)
 Docker
 `docker run --name usc-scheduler -p 5432:5432 -e POSTGRES_PASSWORD=1234 -d postgres`
+
+Generate Key
+`openssl rand -base64 32`

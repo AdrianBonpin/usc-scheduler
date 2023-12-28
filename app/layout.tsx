@@ -1,15 +1,19 @@
+import { consMeta } from '@/utils/extra'
+import ThemeProv from '@/utils/themeprovider'
+
 import './globals.css'
 
-export default function RootLayout({ children, }: { children: React.ReactNode }) {
+export const metadata = consMeta()
 
-  
+export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <header>
-
       </header>
       <body>
-        {children}
+        <ThemeProv>
+          {children}
+        </ThemeProv>
       </body>
     </html>
   )
